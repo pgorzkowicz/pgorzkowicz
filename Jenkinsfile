@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Clone') {
+      steps {
+        git(url: 'https://github.com/pgorzkowicz/demo', branch: 'main')
+      }
+    }
+
   }
 }
